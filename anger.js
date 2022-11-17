@@ -8,6 +8,7 @@
  * [] changing the text on the bubble (in the am)
  * [] Fix scroll bug
  * [] add pseudo code 
+ * [] add Readme.md
  * 
  * Stretch
  * [] Only show up when not on productive sites ~ 1hr
@@ -17,16 +18,19 @@
  *    -> would like to have the cursor BE the img. 
  */
 
-// Setting up the cursor
 const body = document.querySelector('body');
 const cursorSrc = 'https://i.imgur.com/hlOtvGY.png';
 const cursor = document.createElement('img');
+
+// Setting cursor CSS styling and image source
 cursor.setAttribute('src', cursorSrc);
 cursor.style.height = '100px';
 cursor.style.width = 'auto';
 cursor.style.zIndex = '7';
 cursor.style.position = 'absolute';
 body.style.cursor = 'none';
+
+// adding the cursor to the body of the html doc
 body.appendChild(cursor);
 
 // track positions of the mouse, and make the image move with the mouse. 
@@ -36,7 +40,6 @@ const moveCursor = (e)=> {
    
   cursor.style.top = `${mouseY}px`;
   cursor.style.left = `${mouseX}px`;
- 
 }
 
 window.addEventListener('mousemove', moveCursor);
