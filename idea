@@ -1,3 +1,22 @@
-if on a 'codesmith safe' domain, you will get a happy instructor
-if on a non- 'codesmith safe' domain you will get a very unhappy instructor 
-complete with angry messages and an angry photo
+MVP features
+
+- if on a non- 'codesmith safe' domain you will get a very unhappy instructor 
+
+codesmith safe domains include 
+  https://developer.mozilla.org/en-US/
+  https://github.com
+  https://calendar.google.com
+  https://www.w3schools.com
+
+
+Stretch features
+
+- if on a 'codesmith safe' domain, you will get a happy instructor
+- angry instructor messages
+
+things to do broken down 
+- [done] figure out how to make an extension
+- [done] get a database of photos of instructors
+- [] find a way to check what website currently on 
+- [done] change cursor into instructor's face
+- [] live chat with pop up instructor
